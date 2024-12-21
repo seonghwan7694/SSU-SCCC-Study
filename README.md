@@ -5,7 +5,7 @@
 ### 스터디 목록
 
 * 2022 SCCC 스터디
-  * [2022-spring-basic](https://github.com/justiceHui/SSU-SCCC-Study/tree/master/2022-spring-basic) : 봄 초급 강의 <- [**책갈피**](2022-spring-basic/slide/01.pdf) 랜선 자르기 문제 부터 ㄱㄱ
+  * [2022-spring-basic](https://github.com/justiceHui/SSU-SCCC-Study/tree/master/2022-spring-basic) : 봄 초급 강의 <- [**책갈피**](2022-spring-basic/slide/02.pdf) Z 부터 ㄱㄱ
   * [2022-spring-problem-solving](https://github.com/justiceHui/SSU-SCCC-Study/tree/master/2022-spring-problem-solving) : 봄 문제 풀이 연습
   * [2022-autumn-adv](https://github.com/justiceHui/SSU-SCCC-Study/tree/master/2022-autumn-adv) : 가을 고급 강의
   * [2022-winter-intermediate](https://github.com/justiceHui/SSU-SCCC-Study/tree/master/2022-winter-intermediate) : 겨울 중급 강의
