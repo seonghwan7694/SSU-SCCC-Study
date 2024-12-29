@@ -1,26 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n, k, p[10101];
-// p[가치] = 경우의 수
-// p[가치] += p[가치 - 동전1];
+int n, k, D[2][10101], A[111];
 
-vector<int> v;
 int main(){
   ios::sync_with_stdio(false);
   cin >> n >> k;
-  v.resize(n);
-  for(int i = 0; i < n; i++){
-    cin >> v[i];
-    p[v[i]] = 1;
+  for(int i = 1; i <= n; i++){
+    cin >> A[i];
   }
-  for(int i = 1; i <= k; i++){
-    for(int j = 0; j < n; j++){
-      if(i - v[j] <= 0) continue;
-      p[i] += p[i - v[j]];
+  D[0][0] = 1;
+  for(int i = 1; i <= n; i++){
+    for(int j = 0; j <= k; j++) D[i%2][j] = 0;
+    for(int j = 0; j <= k; j++){
+      for(int c = 0; j - c * A[i] >= 0; c++){
+        D[i%2][j] += D[(i-1)%2][j-c*A[i]];
+      }
     }
   }
-
-  cout << p[k] << "\n";
+  cout << D[n%2][k] << "\n";
   return 0;
 }
