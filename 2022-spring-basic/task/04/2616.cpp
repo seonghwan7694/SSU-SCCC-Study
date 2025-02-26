@@ -2,7 +2,7 @@
 using namespace std;
 // n log n -> 누적 합을 저장해두기
 // n^3 순간 망해버림
-int N, tmp, M, SUM[20202], dp[4][50505]; // dp[i][n] = max(dp[i][n-1], dp[i-1][j-K] + SUM[j] - SUM[j-K]
+int N, tmp, M, SUM[50505], dp[4][50505]; // dp[i][n] = max(dp[i][n-1], dp[i-1][j-K] + SUM[j] - SUM[j-K]
 int main(){
   ios::sync_with_stdio(false);
   cin >> N;
